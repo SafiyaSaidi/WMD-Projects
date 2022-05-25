@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#icon').click(function(){
+                    $("ul").toggleClass('show');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <nav>
+            <label class="logo">Welcome To Starmex Movie Theater!</label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="movie_page.html">Movie Page</a></li>
+                <li><a href="upcoming.html">Upcoming</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+        <section></section>
+        <h2 class="heading">About Us!</h2>
+        <h2>We are a movies theater established in 2013 to bring to you the best and most popular movies at affordable prices. 
+            And now, we’ve made it a tad bit easier with this newly developed website of ours. 
+            Get information on anything you need as quick as a snap.</h2>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    </head>
+    <body style="background-color: aliceblue;">
+        <h1>Your feedback will help us improve!</h1>
+        <div id="feedback">
+            <div id="feedback-form" style='display:none;' class="col-xs-4 col-md-4 panel panel-default">
+                <form action="/server.js" method="POST" class="form panel-body" role="form">
+                    <div class="form-group">
+                        <input name="email" placeholder="Enter Your Email Here..." autofocus required type="email" />
+                    </div>
+                    <div class="form-group">
+                        <textarea name="body" class="form-control" rows="5" required 
+                        placeholder="Enter Your Text Here..."></textarea>
+                    </div>
+                    <button class="btn btn-primary pull-right" type="reset">Clear All</button>
+                    <button class="btn btn-primary pull-right" type="submit">Send</button>
+
+                </form>
+            </div>
+            <div id="feedback-tab">FEEDBACK</div>
+        </div>
+
+
+        
+
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="server.js"></script>
+
+    </body>
+</html>
